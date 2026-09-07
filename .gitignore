@@ -1,12 +1,12 @@
 .venv/
 __pycache__/
 *.pyc
+.env
 
 .logicals.json
 .pvpn_session.json
 .pvpn_master.json
 .proxy_rotation.json
-roam_test.out.txt
 
 configs/*.conf
 proxies/*.conf

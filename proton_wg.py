@@ -1,23 +1,4 @@
-#!/usr/bin/env python3
-"""
-proton_wg.py - on-demand ProtonVPN WireGuard config fetcher with local cache.
-
-Creates a WireGuard certificate for a server only the first time you ask for it,
-writes configs/wg-<SERVER>.conf, and reuses that file on every later request.
-The Proton web session is cached too, so repeated calls skip the browser login.
-
-Commands:
-  python proton_wg.py get JP#5 US-NY#12 ...   # ensure a .conf exists for each
-  python proton_wg.py list                    # show locally cached configs
-  python proton_wg.py search tokyo            # find server names (logicals list)
-  python proton_wg.py bulk --tier 2 --feature P2P --max 25   # batch create
-  python proton_wg.py login                   # force a fresh browser login
-  python proton_wg.py whoami                  # check the cached session
-
-Credentials: env vars PVPN_USER / PVPN_PASS (or edit DEFAULT_USER/DEFAULT_PASS).
-No 2FA / captcha support. Undocumented Proton API - may break on site changes.
-Original approach: FuseTim 2024 / DonCharisma.org 2025. MIT / Apache-2.0.
-"""
+#!/usr/bin/env 
 import argparse
 import base64
 import hashlib
